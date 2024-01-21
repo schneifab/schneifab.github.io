@@ -1,0 +1,63 @@
+.btn-primary{
+    background-color: #7A11FF;
+}
+
+.navbar .container-fluid{
+    justify-content: flex-start;
+}
+
+#card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-sizing{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#aboutme-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.row{
+    align-items: center;
+}
+
+.progress, .progress-stacked {
+    --bs-progress-height: 1.5rem;
+}
+
+.progress-bar {
+    background-color: #7A11FF;
+}
+
+@media (max-width:1398px) {
+    #card-container{
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+@media (max-width:991px) {
+    #card-container{
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+@media (max-width:769px) {
+    #card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0px;
+        
+    }
+}
