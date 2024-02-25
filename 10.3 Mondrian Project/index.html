@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    /* 3 rows, 4 columns */
+    .grid-container{
+      display: grid;
+      height: 100vh;
+      justify-content: center;
+      align-content: center;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+    }
+
+    .red{
+      background-color: #E72F24;
+      border-right: 4.5px solid black;
+      border-bottom: 4.5px solid black;
+    }
+
+    .blank{
+      background-color: #F0F1EC;
+    }
+
+    .black{
+      background-color: #232629;
+      border-left: 4.5px solid black;
+      border-right: 4.5px solid black;
+      border-top: 4.5px solid black;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+      border-left: 4.5px solid black;
+      border-right: 4.5px solid black;
+      border-top: 4.5px solid black;
+    }
+
+    .blue{
+      background-color: #004592;
+      border-bottom: 9.5px solid black;
+      border-left: 4.5px solid black;
+      border-top: 4.5px solid black;
+    }
+
+    .a{
+      grid-column: span 3;
+      border-bottom: 4.5px solid black;
+      border-left: 4.5px solid black;
+    }
+
+    .b{
+      grid-column: span 1;
+      grid-row: span 2;
+      border-bottom: 4.5px solid black;
+      border-right: 4.5px solid black;
+      border-top: 4.5px solid black;
+    }
+    .c{
+      grid-column: span 2;
+      grid-row: span 2;
+      border: 4.5px solid black;
+    }
+    .d{
+      grid-row: span 2;
+      border-left: 4.5px solid black;
+      border-top: 5px solid black;
+    }
+    .e{
+      border-top: 4.5px solid black;
+      border-right: 4.5px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="item red"></div>
+    <div class="item blank a"></div>
+    <div class="item blank b"></div>
+    <div class="item blank c"></div>
+    <div class="item blue"></div>
+    <div class="item blank d"></div>
+    <div class="item blank e"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+    
+  </div>
+  
+</body>
+
+</html>
